@@ -1,0 +1,143 @@
+#blocPage {
+  width: 900px;
+  margin: auto;
+}
+/* STYLE HEADER */
+/* STYLE DE LA NAV */
+nav {
+  font-family: 'Roboto', sans-serif;
+  color: #AFAFAF;
+}
+nav ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: white;
+  -webkit-box-shadow: 0 8px 6px -6px #EAEAEA;
+  -moz-box-shadow: 0 8px 6px -6px #EAEAEA;
+  box-shadow: 0 8px 6px -6px #EAEAEA;
+}
+nav li {
+  float: right;
+}
+nav li a {
+  display: block;
+  color: black;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+nav li a:hover {
+  background-color: #F9B234;
+}
+/* STYLE HEADER */
+h1{
+  position: relative;
+  top: 125px; left: 190px;
+  font-family: 'Roboto', sans-serif;
+  color: #312A6B;
+  font-size: 120%;
+}
+header p{
+  font-family: 'Roboto', sans-serif;
+}
+.imageCodeuse {
+  background-color: #E5CDB3;
+  background-size: 50%, 25%, 25%;
+  background-position: bottom 50px right 100px;
+}
+/* STYLE SECTION */
+.capsule {
+  position: relative;
+  bottom: 340px; left: 400px;
+  background-color: #312A6B;
+  width: 25%;
+  height: 200px;
+  font-family: 'Roboto', sans-serif;
+  text-align: right;
+  color: white;
+  padding: 20px;
+  box-shadow: 1px 5px 5px black;
+}
+/* #boxbeige {
+  float: left;
+  background-color: #E5CDB3;
+  width: 80%;
+  height: 40px;
+} */
+
+.capsule2 {
+  position: relative;
+  position: relative;
+  bottom: 300px; left: 100px;
+  background-color: white;
+  width: 55%;
+  height: 350px;
+  box-shadow: 5px 5px 10px rgba(0,0,0,0.3);
+  font-family: 'Roboto', sans-serif;
+}
+
+#orange {
+  /* float: left; */
+background-color: #F9B234;
+width: 100%;
+height: 30px;
+}
+
+
+.exo ul{
+padding-left: 0px;
+padding-bottom: 5px;
+justify-content: center;
+margin-top: 15px;
+
+font-family: 'Roboto', sans-serif;
+color: #312A6B;
+}
+
+.exo li{
+/* padding-left: 50px; */
+/* padding-top: 10px; */
+margin-top: 15px;
+font-family: 'Roboto', sans-serif;
+color: #312A6B;
+}
+
+
+/* STYLE FOOTER */
+footer {
+  display: flex;
+  background-color: #312A6B;
+  width: 100%;
+  height: 80px;
+  color: white;
+  font-size: 10px;
+}
+a:link{
+  text-decoration:none;
+}
+
+.cartouche li{
+	display: inline;
+  list-style: none; /* pour enlever les puces sur IE7 */
+	padding: 2px;
+  /* box-shadow: 5px 5px 10px rgba(0,0,0,0.3); */
+
+}
+.cartouche li a {
+  display: inline-block;
+	width: 35px;
+	padding: 4px 5px;
+
+	text-decoration: none;
+	color: #E4B35B;
+	font-weight: bold;
+	background: #312A6B;
+  box-shadow: 1px 2px 2px black;
+
+}
+.active img{
+  height: 10px;
+  width: 70%;
+}
