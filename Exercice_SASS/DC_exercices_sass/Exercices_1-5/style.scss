@@ -1,0 +1,82 @@
+// SYNTAXE SASS
+
+// EXERCICE 1
+// Créer des variables contenant des couleurs et les appliquer.
+// ----------------------------------------------------
+$mainColor: red;
+.titre {
+  color: $mainColor;
+}
+
+// EXERCICE 2
+// Créer plusieurs mixins permettant de changer la taille, la police, et la couleur du texte.
+// ----------------------------------------------------
+@mixin treatmentText {
+  font-size: 155px;
+  font-style: tahoma;
+  color: pink;
+}
+h1{
+  @include treatmentText;
+}
+
+// EXERCICE 3
+// Appliquer aux balises li du paragraphe "par_1" une couleur et un text-decoration.
+// ----------------------------------------------------
+// ici la mixin s'applique sur la class par_1
+@mixin treatmentList {
+  color: yellow;
+  text-decoration: underline;
+}
+// permet d'appeler la mixin treatmentList
+.par_1 {
+  @include treatmentList;
+}
+
+// EXERCICE 4
+// Créer une classe de votre choix avec les options de votre choix. Créer une deuxième classe étendant la première et lui rajouter un text-decoration.
+// ----------------------------------------------------
+// .titleMini h4 {
+//    color: green;
+//   .choice{
+//     text-decoration: underline;
+//   }
+// }
+@mixin treatmentChoice {
+  color: green;
+  font-size: 45px;
+}
+// .choice {
+//    @include treatmentChoice;
+//   .titleMini{
+//     text-decoration: underline;
+//   }
+// }
+// .corps2 {
+//   @include treatmentChoice;
+//   .titleMini{
+//     text-decoration: underline;
+//   }
+// }
+
+//creation d'une class qui contient un background-color
+.choice{
+  background-color: grey;
+}
+// j'étend la class .choice sur la class .corps2
+.corps2{
+@include treatmentChoice;
+@extend .choice;
+}
+
+// EXERCICE 5
+// Créer un hover sur un paragraphe. Lui appliquer un text-decoration et une couleur.
+// ----------------------------------------------------
+.corps1 p{
+  background-color: blue;
+
+  &:hover{
+    background-color: pink;
+    text-decoration: line-through;
+  }
+}

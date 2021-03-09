@@ -1,0 +1,33 @@
+.titre {
+  color: red;
+}
+
+h1 {
+  font-size: 155px;
+  font-style: tahoma;
+  color: pink;
+}
+
+.par_1 {
+  color: yellow;
+  text-decoration: underline;
+}
+
+.choice, .corps2 {
+  background-color: grey;
+}
+
+.corps2 {
+  color: green;
+  font-size: 45px;
+}
+
+.corps1 p {
+  background-color: blue;
+}
+.corps1 p:hover {
+  background-color: pink;
+  text-decoration: line-through;
+}
+
+/*# sourceMappingURL=style.css.map */
